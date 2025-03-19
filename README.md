@@ -1,4 +1,4 @@
-# PostHog Tremor Visualization Example
+# PostHog Tremor Shadcn UI Charts Example
 
 This project demonstrates how to visualize PostHog analytics data using the Tremor charting library and Next.js. It provides a user-friendly interface to connect to your PostHog instance, fetch insights, and display them as interactive charts.
 
@@ -22,7 +22,7 @@ This project demonstrates how to visualize PostHog analytics data using the Trem
 1. Clone this repository:
 
 ```bash
-git clone https://github.com/yourusername/posthog-tremor-example.git
+git clone https://github.com/PostHog/posthog-shadcn-charts-example.git
 cd posthog-tremor-example
 ```
 
