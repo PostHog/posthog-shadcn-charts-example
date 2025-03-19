@@ -64,7 +64,6 @@ yarn dev
 ## Technologies Used
 
 - [Next.js](https://nextjs.org/) - React framework
-- [Tremor](https://www.tremor.so/) - React components for data visualization
 - [Recharts](https://recharts.org/) - Composable charting library
 - [ShadcnUI](https://ui.shadcn.com/) - UI component library
 - [PostHog API](https://posthog.com/docs/api) - Analytics data source
