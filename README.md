@@ -1,36 +1,91 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# PostHog Tremor Visualization Example
 
-## Getting Started
+This project demonstrates how to visualize PostHog analytics data using the Tremor charting library and Next.js. It provides a user-friendly interface to connect to your PostHog instance, fetch insights, and display them as interactive charts.
 
-First, run the development server:
+## Features
+
+- Connect to PostHog US or EU instances
+- Browse and select projects
+- View available insights
+- Visualize insights as line or bar charts
+- Interactive charts with tooltips and legends
+- Debug mode for troubleshooting data transformation issues
+
+## Prerequisites
+
+- Node.js 18.x or higher
+- pnpm, npm, or yarn
+- A PostHog account with a personal API key
+
+## Installation
+
+1. Clone this repository:
 
 ```bash
+git clone https://github.com/yourusername/posthog-tremor-example.git
+cd posthog-tremor-example
+```
+
+2. Install dependencies:
+
+```bash
+pnpm install
+# or
+npm install
+# or
+yarn install
+```
+
+3. Start the development server:
+
+```bash
+pnpm dev
+# or
 npm run dev
 # or
 yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+4. Open [http://localhost:3000](http://localhost:3000) with your browser to access the application.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Usage
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+1. Obtain a Personal API Key from your PostHog instance:
+   - Go to your PostHog instance
+   - Navigate to Settings > Personal API Keys
+   - Create a new API key with appropriate permissions
 
-## Learn More
+2. In the application:
+   - Enter your API key and select your region (US or EU)
+   - Select a project from the dropdown
+   - Choose an insight to visualize
+   - View the chart and switch between line and bar visualization
 
-To learn more about Next.js, take a look at the following resources:
+## Technologies Used
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- [Next.js](https://nextjs.org/) - React framework
+- [Tremor](https://www.tremor.so/) - React components for data visualization
+- [Recharts](https://recharts.org/) - Composable charting library
+- [ShadcnUI](https://ui.shadcn.com/) - UI component library
+- [PostHog API](https://posthog.com/docs/api) - Analytics data source
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## Customization
 
-## Deploy on Vercel
+You can extend this example by:
+- Adding more chart types (pie charts, area charts, etc.)
+- Implementing dashboard features to display multiple insights
+- Creating custom visualizations for specific insight types
+- Adding filters for date ranges or user segments
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## Troubleshooting
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+If you encounter issues with data transformation:
+1. Check if the insight type is supported (TRENDS, FUNNELS, LIFECYCLE, etc.)
+2. Verify that the insight has the expected data structure
+3. Try a different insight or chart type
+4. Simple TRENDS insights usually work best with line and bar charts
+5. Use the debug mode to inspect raw data
+
+## License
+
+[MIT](LICENSE)
